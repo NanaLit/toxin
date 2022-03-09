@@ -6,6 +6,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const webpack = require('webpack');
+const pug = require('pug');
 
 gulp.task('server', function() {
 

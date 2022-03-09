@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,AAAC,CACF,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CAKd,AAPD,AAGI,KAHC,CAGD,GAAG,AAAC,CACA,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../styles/style.scss",
+        "../ui-kit/logo/_logo.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
