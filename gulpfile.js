@@ -17,11 +17,22 @@ gulp.task('server', function() {
         }
     });
 
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("src/ui-kit/*.html").on('change', browserSync.reload);
+});
+
+gulp.task('html:build', function() {
+    return gulp.src(['src/ui-kit/**/*.pug', '!src/ui-kit/**/_*.pug'])
+           .pipe(pug())
+           .pipe(gulp.dest('dist/*.html'))
+           .pipe(browserSync.stream());
+});
+
+gulp.task('watch', function(){
+    gulp.watch('src/ui-kit/**/*.pug');
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(scss|sass)")
+    return gulp.src("src/ui-kit/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
@@ -31,22 +42,22 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
-    gulp.watch("src/*.html").on('change', gulp.parallel('html'));
-    gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
+    gulp.watch("src/ui-kit/**/*.+(scss|sass|css)", gulp.parallel('styles'));
+    gulp.watch("src/ui-kit/*.pug").on('change', gulp.parallel('html'));
+    gulp.watch("src/ui-kit/**/*.js").on('change', gulp.parallel('scripts'));
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));
     gulp.watch("src/icons/**/*").on('all', gulp.parallel('icons'));
     gulp.watch("src/img/**/*").on('all', gulp.parallel('images'));
 });
 
 gulp.task('html', function () {
-    return gulp.src("src/*.html")
+    return gulp.src("src/ui-kit/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("dist/"));
 });
 
 gulp.task('scripts', function () {
-    return gulp.src("src/js/**/*.js")
+    return gulp.src("src/ui-kit/**/*.js")
         .pipe(gulp.dest("dist/js"))
         .pipe(browserSync.stream());
 });
@@ -75,4 +86,4 @@ gulp.task('images', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'mailer', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'mailer', 'images', 'pug'));
