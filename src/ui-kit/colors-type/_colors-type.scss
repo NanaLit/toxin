@@ -1,6 +1,11 @@
 .colors-type {
-    padding: 145px 0;
-    position: relative;
-    min-height: 280px;
+  padding: 11% 0;
+  position: relative;
+  min-height: 280px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-@import "../colors/colors";
+@import '../colors/colors';
+@import '../titles/titles';

@@ -1,52 +1,55 @@
 .colors__wrapper {
-    display: grid;
-    grid-template-columns: 145px;
-    grid-template-rows: repeat(7, 70px);
-    grid-auto-rows: 70px;
-    gap: 20px;
-    .colors__item {
-        display: grid;
-        grid-template-columns: 70px 170px;
-        gap: 40px;
-    }
-    .colors__descr {
-        display: flex;
-        flex-direction: column;
-    }
-    .colors__title {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 19px;
-        line-height: 28px;
-        color: #1F2041;
-        &_id {
-            font-weight: 400;
-        }
-    }
-    
-    .colors__square {
-        border-radius: 6px;
-        &_1 {
-            background-color: #1F2041;
-        }
-        &_2 {
-            background-color: rgba(31, 32, 65, 0.75);
-        }
-        &_3 {
-            background-color: rgba(31, 32, 65, 0.5);
-        }
-        &_4 {
-            background-color: rgba(31, 32, 65, 0.25);
-        }
-        &_5 {
-            background-color: rgba(31, 32, 65, 0.05);
-        }
-        &_6 {
-            background-color: #BC9CFF;
-        }
-        &_7 {
-            background-color: #6FCF97;
-        }
-    }
-    
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(7, 70px);
+	grid-auto-rows: 70px;
+	gap: 20px;
+	margin-left: 8%;
+	.colors__item {
+		display: grid;
+		grid-template-columns: 70px 170px;
+		gap: 40px;
+}
+	.colors__descr {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.colors__title {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		color: #1F2041;
+		&_id {
+			font-weight: 400;
+		}
+	}
+	
+	.colors__square {
+		width: 100%;
+		height: 100%;
+		border-radius: 6px;
+		&_1 {
+			background-color: #1F2041;
+		}
+		&_2 {
+			background-color: rgba(31, 32, 65, 0.75);
+		}
+		&_3 {
+			background-color: rgba(31, 32, 65, 0.5);
+		}
+		&_4 {
+			background-color: rgba(31, 32, 65, 0.25);
+		}
+		&_5 {
+			background-color: rgba(31, 32, 65, 0.05);
+		}
+		&_6 {
+			background-color: #BC9CFF;
+		}
+		&_7 {
+			background-color: #6FCF97;
+		}
+	}
 }
