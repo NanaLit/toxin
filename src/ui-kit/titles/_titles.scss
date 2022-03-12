@@ -3,21 +3,24 @@
   display: grid;
   grid-template-columns: 37px 369px;
   grid-template-rows: 59px 47px 15px 48px;
-  gap: 30px 51px;
+  gap: 51px 24px;
   
-  &__labbel_1 {
+  &__label {
     display: flex;
     justify-self: start;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    width: 10%;
+    text-align: right;
+    &_1 {
+      font-size: 24px;
+    }
     &_2 {
-      font-size: 19px;
+      font-size: 18px;
     }
     &_3 {
-      font-size: 15px;
+      font-size: 13px;
     }
     &_4 {
       font-size: 14px;
@@ -27,10 +30,12 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 29px;
+    margin: 0;
   }
   h2 {
+    margin: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -39,6 +44,7 @@
     color: #1F2041;
   }
   h3 {
+    margin: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -48,6 +54,7 @@
     color: #1F2041;
   }
   &__descr {
+    margin: 0;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
