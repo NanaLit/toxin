@@ -1,14 +1,15 @@
-- var pageTitle = "UI kit"
+include pug/libs/_libs
+include pug/libs/logo/_logo
 
 doctype html
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title= pageTitle
-    link(rel="stylesheet", href="css/normalize.css")
-    link(rel="stylesheet", href="css/fonts.css")
-    link(rel='stylesheet' href="css/style.min.css")
-  body 
-    include ui-kit/colors-type/colors-type.pug
+html(lang='en')
+    include pug/_head
+    body
+        .container
+            h1 Hello from Webpack
+            h2.container__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
+            +image('angular')
+            +image('webpack')
+            .block
+            .user
+            +logo
