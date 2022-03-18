@@ -1,5 +1,16 @@
 extends ../../layouts/default-ui-kit.pug
-include ../../libs/logo/_logo.pug
 
+block variables
+  - pageTitle = 'Colors & Types'
 block content 
   include ../../includes/header/_header.pug
+  include ../../libs/colors/_colors.pug
+  .container 
+    .colors__wrapper 
+      +colors({className: "dark-shade-100", colorName: "Dark Shade 100%", colorNumber: "#1F2041"})
+      +colors({className: "dark-shade-75", colorName: "Dark Shade 75%", colorNumber: "#1F2041"})
+      +colors({className: "dark-shade-50", colorName: "Dark Shade 50%", colorNumber: "#1F2041"})
+      +colors({className: "dark-shade-25", colorName: "Dark Shade 25%", colorNumber: "#1F2041"})
+      +colors({className: "dark-shade-5", colorName: "Dark Shade 5%", colorNumber: "#1F2041"})
+      +colors({className: "purple", colorName: "Purple", colorNumber: "#BC9CFF"})
+      +colors({className: "green", colorName: "Green", colorNumber: "#6FCF97"})
