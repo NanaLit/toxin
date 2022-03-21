@@ -1,0 +1,4 @@
+mixin text-block({tag, tagName, className, text, classTag})
+  .text-item
+    #{tag}(class= classTag)= tagName
+    p(class= className)= text

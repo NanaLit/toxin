@@ -92,4 +92,7 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.js', '.scss'],   
+    },
 };

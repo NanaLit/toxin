@@ -1,0 +1,24 @@
+//colors
+:root {
+  //colors
+  --dark-shade:                #1F2041;
+  --dark-shade--light:         rgba(31, 32, 65, 0.75);
+  --dark-shade--lighten:       rgba(31, 32, 65, 0.5);
+  --dark-shade--lightest:      rgba(31, 32, 65, 0.25);
+  --dark-shade--white:         rgba(31, 32, 65, 0.05);
+  --purple:                    #BC9CFF;
+  --green:                     #6FCF97;
+  --white:                     #FFFFFF;
+  --dark-shade--transparent:   rgba(31, 32, 65, 0.25);
+  --dark-shade--translucent:   rgba(31, 32, 65, 0.75);
+  --main-gradient:             linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  //font size
+  --font-size--big:            24px;
+  --font-size--medium:         19px;
+  --font-size--small:          12px;
+  --font-size--base:           14px;
+  // fonts
+  --mainFont:                  Montserrat, OpenSans, sans-serif;
+  --titleFont:                 Quicksand, OpenSans, sans-serif;
+  --MaterialIcons:             'Material Icons', sans-serif;
+}

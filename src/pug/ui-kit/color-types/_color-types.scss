@@ -1,3 +1,13 @@
+.content__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
 .colors__wrapper {
-  margin: 64px 0 0 102px;
+  margin-left: 111px;
+}
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 436px;
 }
