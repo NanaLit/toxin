@@ -1,8 +1,10 @@
 
 
 .color-item {
-  display: flex;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 70px 171px;
+  grid-template-rows: 70px;
+  column-gap: 40px;
   &__sample {
     width: 70px;
     height: 70px;
@@ -30,21 +32,25 @@
     }
   }
   &__descr {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: --font-size--medium;
-    line-height: 28px;
     display: flex;
     flex-direction: column;
-    align-self: center;
-    margin-left: 38px;
-    letter-spacing: 1px;
+    justify-content: center;
+    align-items: flex-start;
     p {
-      margin:0;
+      margin: 0;
+      font-family: var(--mainFont);
+      font-weight: 700;
+      font-size: var(--font-size--medium);
+      line-height: 28.5px;
+      color: var(--dark-shade);
     }
     span {
-      font-weight: 300;
+      margin: 0;
+      font-family: var(--mainFont);
+      font-weight: 400;
+      font-size: var(--font-size--medium);
+      line-height: 27.75px;
+      color: var(--dark-shade);
     }
   }
 }

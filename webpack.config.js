@@ -36,7 +36,7 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new HtmlWebpackPlugin({
-            template: "./src/pug/ui-kit/color-types/color-types.pug"
+            template: "./src/pug/ui-kit/form-elements/form-elements.pug"
         })],
     module: {
         rules: [

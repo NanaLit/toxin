@@ -1,13 +1,20 @@
 .content__wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 281px 428px;
+  grid-template-rows: 610px;
+  column-gap: 540px;
+  margin-top: 63px;
 }
 .colors__wrapper {
-  margin-left: 111px;
+  margin-left: 124px;
+  display: grid;
+  grid-template-columns: 281px;
+  grid-template-rows: repeat(7, 70px);
+  row-gap: 20px;
+  letter-spacing: -0.97px;
 }
 .text__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 436px;
+  display: grid;
+  grid-template-rows: 59px 47px 15px 48px;
+  row-gap: 50.5px;
 }

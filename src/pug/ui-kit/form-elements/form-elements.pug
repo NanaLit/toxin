@@ -1,0 +1,8 @@
+extends ../../layouts/default-ui-kit.pug
+include ../../libs/text-field/_text-field.pug 
+block variables
+  - pageTitle = 'Form Elements'
+block content
+  .container 
+    +text-field("hi","email", "nana", "ll", disable, true, true)
+    

@@ -1,0 +1,25 @@
+
+mixin text-field(labelName, type= "text", name, placeholder, disable, isMasked, inActive)
+  - let classes = []
+  - let maskClass = "text-field__input_mask"
+  - let activeClass = "text-field__input_active"
+  if (isMasked==true && inActive==true)
+  - classes = `${maskClass} ${activeClass}`
+ 
+  if (inActive==true && isMasked==false)
+  -classes = `${activeClass}`
+  
+  if (inActive==false && isMasked==true)
+  -classes = `${maskClass}`
+  
+  if (inActive==false && isMasked==false)
+  -classes = ``
+  
+    label.text-field__label= labelName
+      input.text-field__input(
+        class=classes
+        type=type
+        name=name
+        placeholder= placeholder
+        disable=disable
+      )
