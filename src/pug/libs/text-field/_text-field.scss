@@ -1,0 +1,10 @@
+.titles {
+  font-family: var(--mainFont);
+  font-weight: 400;
+  font-size: var(--font-size--big);
+  color: var(--dark-shade--lightest);
+  &_h3 {
+    font-size: var(--font-size--small);
+    text-transform: uppercase;
+  }
+}

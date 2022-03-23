@@ -4,5 +4,8 @@ block variables
   - pageTitle = 'Form Elements'
 block content
   .container 
-    +text-field("hi","email", "nana", "ll", disable, true, true)
-    
+    .text-field-container
+      .text-fifeld
+        +text-field("text field", "email", "email", "Email", disabled, readonly, false)
+      .text-field
+        +text-field("masked text field", "text", "date", "", disabled, readonly, true)
