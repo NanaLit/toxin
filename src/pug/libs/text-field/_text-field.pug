@@ -1,5 +1,5 @@
 
-mixin text-field(labelName, type= "text", name, placeholder, disabled=false, readonly=false, isMasked)
+mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly, isMasked)
   - let maskClass = ''
   if isMasked
     - maskClass = "text-field__input_masked"

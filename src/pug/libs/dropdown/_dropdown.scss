@@ -1,0 +1,13 @@
+.text-field{
+  &__input {
+    &_dropdown {
+      position: relative;
+      z-index: -1;
+      background: url(expand_more.jpg) no-repeat 95% 50% #fff;
+      option {
+        height: 43px;
+        
+      }
+    }
+  }
+}

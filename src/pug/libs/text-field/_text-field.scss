@@ -12,22 +12,22 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  height: 67px;
+  height: 65px;
   margin-left: 115px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   &__input {
     margin-top: 5px;
-    height: 39px;
+    height: 44px;
     font-family: var(--mainFont);
     font-weight: 400;
     font-size: var(--font-size--base);
-    letter-spacing: 0.3px;
-    
+    letter-spacing: 0.1px;
     border: 1px solid var(--dark-shade--lightest);
     border-radius: 5px;
     padding-left: 12px;
     &::placeholder {
       color: var(--dark-shade--lightest);
+      align-self: center;
     }
     &:hover, :focus {
       border: 1px solid var(--dark-shade--lighten);

@@ -1,15 +1,16 @@
-extends ../../layouts/default-ui-kit.pug
+extends ../../layouts/default-ui-kit.pug 
 include ../../libs/text-field/_text-field.pug 
 block variables
   - pageTitle = 'Form Elements'
 block content
+  include ../../libs/dropdown/_dropdown.pug 
   .container 
     .text-field-container
       .text-field
         +text-field("text field", "email", "email", "Email", disabled, readonly, false)
       .text-field
-        +text-field("text field", "email", "email", "Email", disabled, readonly, false)
+        +text-field("text field", "email", "email", "This is pretty awesome", disabled, readonly, false)
       .text-field
-        +text-field("text field", "email", "email", "Email", disabled, readonly, false)
+        +dropdown(["Сколько гостей", 1, 2, 3], "dropdown", "drop", disabled, readonly)
       .text-field
         +text-field("masked text field", "text", "date", "", disabled, readonly, true)
