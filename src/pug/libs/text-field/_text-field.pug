@@ -2,14 +2,14 @@
 mixin text-field(labelName, type= "text", name, placeholder, disabled=false, readonly=false, isMasked)
   - let maskClass = ''
   if isMasked
-    - maskClass = "text-field__input_active"
-    - placeholder = "ДД.ММ.ГГ"
-  label.titles.titles_h3= labelName
-    input.text-field__input(
-      class= `${maskClass}`
-      type=type
-      name=name
-      placeholder= placeholder
-      disabled=disabled 
-      readonly=readonly
-    )
+    - maskClass = "text-field__input_masked"
+    - placeholder = "ДД.ММ.ГГГГ"
+  label.titles.titles_h3(for=name)= labelName
+  input.text-field__input(
+    class= `${maskClass}`
+    type=type
+    name=name
+    placeholder= placeholder
+    disabled=disabled 
+    readonly=readonly
+  )

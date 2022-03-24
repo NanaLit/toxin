@@ -1,10 +1,40 @@
 .titles {
   font-family: var(--mainFont);
   font-weight: 400;
-  font-size: var(--font-size--big);
-  color: var(--dark-shade--lightest);
+  color: var(--dark-shade);
   &_h3 {
     font-size: var(--font-size--small);
     text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+}
+.text-field {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 67px;
+  margin-left: 115px;
+  margin-bottom: 18px;
+  &__input {
+    margin-top: 5px;
+    height: 39px;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    font-size: var(--font-size--base);
+    letter-spacing: 0.3px;
+    
+    border: 1px solid var(--dark-shade--lightest);
+    border-radius: 5px;
+    padding-left: 12px;
+    &::placeholder {
+      color: var(--dark-shade--lightest);
+    }
+    &:hover, :focus {
+      border: 1px solid var(--dark-shade--lighten);
+      color: var(--dark-shade--lighten);
+      &::placeholder {
+        color: var(--dark-shade--lighten);
+      }
+    }
   }
 }

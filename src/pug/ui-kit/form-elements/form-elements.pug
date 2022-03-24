@@ -5,7 +5,11 @@ block variables
 block content
   .container 
     .text-field-container
-      .text-fifeld
+      .text-field
+        +text-field("text field", "email", "email", "Email", disabled, readonly, false)
+      .text-field
+        +text-field("text field", "email", "email", "Email", disabled, readonly, false)
+      .text-field
         +text-field("text field", "email", "email", "Email", disabled, readonly, false)
       .text-field
         +text-field("masked text field", "text", "date", "", disabled, readonly, true)
