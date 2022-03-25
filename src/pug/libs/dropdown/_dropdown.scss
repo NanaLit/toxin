@@ -1,13 +1,13 @@
 .text-field{
-  &__input {
-    &_dropdown {
-      position: relative;
-      z-index: -1;
-      background: url(expand_more.jpg) no-repeat 95% 50% #fff;
-      option {
-        height: 43px;
-        
-      }
+  .select__wrapper {
+    background: url(expand_more.svg) no-repeat 95% 50% transparent;
+    overflow: hidden; 
+    select {
+      background: transparent;
+      appearance: none;
+      width: 320px;
+      height: 44px;
+      color: var(--dark-shade--lighten);
     }
   }
 }

@@ -1,11 +1,12 @@
 - let items = []
   mixin dropdown(items, labelName, name, disabled, readonly)
     label.titles.titles_h3(for=name)= labelName
-    select.text-field__input(
-      class=("text-field__input_dropdown")
-      name=name 
-      disabled=disabled
-      readonly=readonly
-    )
-      each item in items 
-        option(value=item)=item 
+    .select__wrapper
+      select.text-field__input(
+        class=("text-field__input_dropdown")
+        name=name 
+        disabled=disabled
+        readonly=readonly
+      )
+        each item in items 
+          option(value=item)=item 
