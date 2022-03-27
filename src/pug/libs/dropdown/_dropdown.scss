@@ -1,13 +1,23 @@
 .text-field{
   .select__wrapper {
-    background: url(expand_more.svg) no-repeat 95% 50% transparent;
+    background: url(../../../images/arrow_down.svg) no-repeat 95% 50% transparent;
     overflow: hidden; 
     select {
       background: transparent;
       appearance: none;
       width: 320px;
       height: 44px;
-      color: var(--dark-shade--lighten);
+      color: var(--dark-shade--lightest);
+      &:hover, :focus {
+        color: var(--dark-shade--lighten);
+      }
+      &:active {
+        border: var(--dark-shade--lighten);
+      }
+      option {
+        width: 44px;
+        border-radius: 6px;
+      }
     }
   }
 }

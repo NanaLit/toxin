@@ -4,6 +4,7 @@ block variables
   - pageTitle = 'Form Elements'
 block content
   include ../../libs/dropdown/_dropdown.pug 
+  include ../../libs/input-dropdown/_input-dropdown.pug
   .container 
     .text-field-container
       .text-field
@@ -14,3 +15,4 @@ block content
         +dropdown(["Сколько гостей", 1, 2, 3], "dropdown", "drop", disabled, readonly)
       .text-field
         +text-field("masked text field", "text", "date", "", disabled, readonly, true)
+      .date-dropdown

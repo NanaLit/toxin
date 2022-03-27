@@ -36,5 +36,8 @@
         color: var(--dark-shade--lighten);
       }
     }
+    &:active {
+      background-color: #fff;
+    }
   }
 }

@@ -1,9 +1,11 @@
 
-mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly, isMasked)
+mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly, isMasked, maxlength)
   - let maskClass = ''
   if isMasked
     - maskClass = "text-field__input_masked"
     - placeholder = "ДД.ММ.ГГГГ"
+    - maxlength = "10"
+    
   label.titles.titles_h3(for=name)= labelName
   input.text-field__input(
     class= `${maskClass}`
@@ -12,4 +14,5 @@ mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly,
     placeholder= placeholder
     disabled=disabled 
     readonly=readonly
+    maxlength=maxlength
   )
