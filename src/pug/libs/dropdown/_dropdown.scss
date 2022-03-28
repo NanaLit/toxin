@@ -1,7 +1,8 @@
 .text-field{
   .select__wrapper {
     background: url(../../../images/arrow_down.svg) no-repeat 95% 50% transparent;
-    overflow: hidden; 
+    display: block;
+    overflow: visible;
     select {
       background: transparent;
       appearance: none;

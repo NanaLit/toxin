@@ -1,0 +1,31 @@
+.dropdown {
+  background: url(../../../images/arrow_down.svg) no-repeat 95% 50% transparent;
+  overflow: visible;
+  &__title {
+    background: transparent;
+    appearance: none;
+    width: 320px;
+    height: 44px;
+    color: var(--dark-shade--lightest);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:hover, :focus {
+      color: var(--dark-shade--lighten);
+    }
+  }
+  &-wrapper {
+    border: 1px solid var(--dark-shade--lightest);
+    border-radius: 0 0 5px 5px;
+    height: auto;
+    width: 320px;
+    padding-left: 12px;
+    &__item {
+      width: 44px;
+      color: var(--dark-shade--lightest);
+      &:hover, :focus {
+        color: var(--dark-shade--lighten);
+      }
+    }
+  }
+}
