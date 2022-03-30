@@ -1,30 +1,27 @@
-.titles {
-  font-family: var(--mainFont);
-  font-weight: 400;
-  color: var(--dark-shade);
-  &_h3 {
-    font-size: var(--font-size--small);
-    text-transform: uppercase;
-    letter-spacing: 0.2px;
-  }
-}
 .text-field {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  height: 65px;
-  margin-left: 115px;
-  margin-bottom: 20px;
+  .titles {
+    font-family: var(--mainFont);
+    font-weight: 700;
+    color: var(--dark-shade);
+    &_h3 {
+      font-size: var(--font-size--small);
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+    }
+  }
   &__input {
+    width: 19rem;
     margin-top: 5px;
-    height: 44px;
+    height: 2.5rem;
     font-family: var(--mainFont);
     font-weight: 400;
     font-size: var(--font-size--base);
     letter-spacing: 0.1px;
     border: 1px solid var(--dark-shade--lightest);
     border-radius: 5px;
-    padding-left: 12px;
+    padding-left: 0.75rem;
     &::placeholder {
       color: var(--dark-shade--lightest);
       align-self: center;
@@ -41,3 +38,4 @@
     }
   }
 }
+

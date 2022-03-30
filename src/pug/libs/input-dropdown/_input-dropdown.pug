@@ -1,10 +1,10 @@
 
 mixin dropdown-input(labelName, title, items=[])
-  .titles.titles_h3=labelName
-  .text-field__input.dropdown
+  .dropdown
+    .titles.titles_h3=labelName
     .dropdown__title=title
     .dropdown-wrapper
       each item in items 
         .dropdown-wrapper__item
-          p=item 
+          p.titles.titles_h3=item 
           span=item[i]

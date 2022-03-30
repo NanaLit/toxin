@@ -7,13 +7,8 @@ block content
   include ../../libs/input-dropdown/_input-dropdown.pug
   .container 
     .text-field-container
-      .text-field
-        +text-field("text field", "email", "email", "Email", disabled, readonly, false)
-      .text-field
-        +text-field("text field", "email", "email", "This is pretty awesome", disabled, readonly, false)
-      .text-field
-        +dropdown(["Сколько гостей", 1, 2, 3], "dropdown", "drop", disabled, readonly)
-      .text-field
-        +text-field("masked text field", "text", "date", "", disabled, readonly, true)
-      .text-field
-        +dropdown-input("Dropdown", "Сколько гостей", ["взрослые", "дети"])
+      +text-field("text field", "email", "email", "Email", disabled, readonly, false)
+      +text-field("text field", "email", "email", "This is pretty awesome", disabled, readonly, false)
+      //- +dropdown(["Сколько гостей", 1, 2, 3], "dropdown", "drop", disabled, readonly)
+      +text-field("masked text field", "text", "date", "", disabled, readonly, true)
+      +dropdown-input("Dropdown", "Сколько гостей", ["взрослые", "дети"])

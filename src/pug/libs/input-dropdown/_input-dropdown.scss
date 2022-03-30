@@ -1,27 +1,42 @@
 .dropdown {
-  background: url(../../../images/arrow_down.svg) no-repeat 95% 50% transparent;
-  overflow: visible;
+  
+  .titles {
+    font-family: var(--mainFont);
+    font-weight: 700;
+    color: var(--dark-shade);
+    &_h3 {
+      font-size: var(--font-size--small);
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+    }
+  }
   &__title {
-    background: transparent;
+    background: url(../../../images/arrow_down.svg) no-repeat 95% 50% transparent;
     appearance: none;
-    width: 320px;
-    height: 44px;
+    width: 19rem;
+    height: 2.5rem;
+    border: 1px solid var(--dark-shade--lightest);
     color: var(--dark-shade--lightest);
     display: flex;
+    border-radius: 5px;
     justify-content: flex-start;
+    padding-left: 1rem;
     align-items: center;
     &:hover, :focus {
       color: var(--dark-shade--lighten);
+      border: 1px solid var(--dark-shade--lighten);
     }
   }
   &-wrapper {
+    display: none;
     border: 1px solid var(--dark-shade--lightest);
     border-radius: 0 0 5px 5px;
     height: auto;
-    width: 320px;
-    padding-left: 12px;
+    width: 19rem;
+    padding-left: 1rem;
     &__item {
-      width: 44px;
+      display: flex;
+      height: 2.5rem;
       color: var(--dark-shade--lightest);
       &:hover, :focus {
         color: var(--dark-shade--lighten);
