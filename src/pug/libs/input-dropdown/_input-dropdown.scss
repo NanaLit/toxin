@@ -28,7 +28,6 @@
     }
   }
   &-wrapper {
-    display: none;
     border: 1px solid var(--dark-shade--lightest);
     border-radius: 0 0 5px 5px;
     height: auto;
@@ -43,4 +42,10 @@
       }
     }
   }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
 }
