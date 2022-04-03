@@ -1,5 +1,4 @@
 .dropdown {
-  
   .titles {
     font-family: var(--mainFont);
     font-weight: 700;
@@ -26,9 +25,14 @@
       color: var(--dark-shade--lighten);
       border: 1px solid var(--dark-shade--lighten);
     }
+    &_active {
+      border: 1px solid var(--dark-shade--lighten);
+      color: var(--dark-shade--lighten);
+      border-radius: 5px 5px 0 0;
+    }
   }
   &-wrapper {
-    border: 1px solid var(--dark-shade--lightest);
+    border: 1px solid var(--dark-shade--lighten);
     border-radius: 0 0 5px 5px;
     height: auto;
     width: 19rem;

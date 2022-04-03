@@ -2,9 +2,12 @@
 mixin dropdown-input(labelName, title, items=[])
   .dropdown
     .titles.titles_h3=labelName
-    .dropdown__title=title
+    .dropdown__title=title 
     .dropdown-wrapper.hide
       each item in items 
         .dropdown-wrapper__item
           p.titles.titles_h3=item 
-          span=item[i]
+          .counter 
+            button.minus
+            span.counter__number 0
+            button.plus
