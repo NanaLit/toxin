@@ -1,13 +1,13 @@
 
-mixin dropdown-input(labelName, title, items=[])
+mixin dropdown-input(labelName, title, items=[], className)
   .dropdown
     .titles.titles_h3=labelName
-    .dropdown__title=title 
+    .dropdown__title(class= "dropdown__title_"+className)=title 
     .dropdown-wrapper.hide
       each item in items 
         .dropdown-wrapper__item
           p.titles.titles_h3=item 
-          .counter 
-            button.minus
+          .counter
+            button.minus(class=className)
             span.counter__number 0
-            button.plus
+            button.plus(class=className)
