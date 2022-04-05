@@ -45,6 +45,14 @@
         color: var(--dark-shade--lighten);
       }
     }
+    button {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid var(--dark-shade--lighten);
+      color: var(--dark-shade--lighten);
+    }
   }
 }
 .hide {

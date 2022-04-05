@@ -6,6 +6,4 @@ import dropdown from "./pug/libs/input-dropdown/_dropdown";
 window.addEventListener('DOMContentLoaded', function() {
   maskedInput();
   dropdown();
-  // dropdown('#first');
-  
 });
