@@ -6,10 +6,9 @@ function dropdown() {
       plus = document.querySelectorAll('.plus'),
       minus = document.querySelectorAll('.minus'),
       counter = document.querySelectorAll('.counter__number'),
-      guests = document.querySelectorAll('.guests>.counter__number'),
-      rooms = document.querySelectorAll('.rooms>.counter__number'),
+      clear = document.querySelector('.clear'),
+      apply = document.querySelector('.apply'),
       guestName = 'гость',
-      guestNameMinus = 'гостей',
       littleGuest = 'младенец';
       
   dropdownInput.forEach((item, i, arr) => {
@@ -56,9 +55,14 @@ function dropdown() {
   
   plus.forEach((item, i, arr) => {
     let count = 0;
+    
       arr[i].addEventListener('click', function(event) {
+        
         const target = event.target;
         count = ++count;
+        if (count !== 0) {
+          clear.classList.remove('hidden');
+        }
         if (count <= 5) {
         counter[i].innerHTML = count;
         if (target && target.classList.contains('guests') && +counter[2].innerHTML === 0) {
@@ -81,19 +85,43 @@ function dropdown() {
       count = --count;
       if (count >= 0) {
         counter[i].innerHTML = count;
-        console.log(count);
         if (target && target.classList.contains('guests') && +counter[2].innerHTML === 0) {
           namedGuestsMinus(+counter[1].innerHTML+(+counter[0].innerHTML));
-          dropdownInputGuest.innerHTML = `${+counter[1].innerHTML+(+counter[0].innerHTML)} ${guestName}`;
+          dropdownInputGuest.innerHTML = `${+counter[1].innerHTML+(+counter[0].innerHTML)} ${guestName}`; 
         } else if (target && target.classList.contains('guests') && +counter[2].innerHTML > 0) {
           namedLittleGuestsMinus(+counter[2].innerHTML);
-          dropdownInputGuest.innerHTML = `${+counter[1].innerHTML+(+counter[0].innerHTML)} ${guestName}, ${+counter[2].innerHTML} ${littleGuest}`;
+          dropdownInputGuest.innerHTML = `${+counter[1].innerHTML+(+counter[0].innerHTML)} ${guestName}, ${+counter[2].innerHTML} ${littleGuest}`; 
         }
       } else {
         counter[i].innerHTML = 0;
       }
+      if(+counter[0].innerHTML === 0 && +counter[1].innerHTML === 0) {
+        clear.classList.add('hidden');
+      }
     });
   });
   
+  function clearField() {
+    clear.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target && target.classList.contains('clear')) {
+        console.log('hi');
+        dropdownInputGuest.innerHTML = `Сколько гостей`;
+        clear.classList.add('hidden');
+      }
+    });
+  }
+  clearField();
+  function applyField() {
+    apply.addEventListener('click', function(event) {
+      const target = event.target;
+      if (target && target.classList.contains('apply')) {
+        console.log('hi');
+        document.querySelector('.dropdown-wrapper').classList.toggle('hide');
+        document.querySelector('.dropdown__title').classList.toggle('dropdown__title_active');
+      }
+    });
+  }
+  applyField();
 }
 module.exports = dropdown;

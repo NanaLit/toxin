@@ -11,3 +11,7 @@ mixin dropdown-input(labelName, title, items=[], className)
             button.minus(class=className) -
             span.titles.titles_h3.counter__number 0
             button.plus(class=className) +
+      if (className === 'guests')
+        .control 
+          span.titles.titles_h3.titles_h3_purple.clear.hidden очистить
+          span.titles.titles_h3.titles_h3_purple.apply применить

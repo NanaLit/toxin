@@ -7,6 +7,9 @@
       font-size: var(--font-size--small);
       text-transform: uppercase;
       letter-spacing: 0.2px;
+      &_purple {
+        color: var(--purple);
+      }
     }
   }
   &__title {
@@ -21,6 +24,7 @@
     justify-content: flex-start;
     padding-left: 1rem;
     align-items: center;
+    margin-top: 5px;
     &:hover, :focus {
       color: var(--dark-shade--lighten);
       border: 1px solid var(--dark-shade--lighten);
@@ -37,13 +41,28 @@
     height: auto;
     width: 19rem;
     padding-left: 1rem;
+    .control {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 7px;
+      margin: 15px 0 13px;
+    }
     &__item {
       display: flex;
-      height: 2.5rem;
+      height: 38px;
       color: var(--dark-shade--lightest);
+      justify-content: space-between;
+      padding-right: 7px;
       &:hover, :focus {
         color: var(--dark-shade--lighten);
       }
+      .counter {
+        width: 92px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
     }
     button {
       width: 30px;
@@ -53,6 +72,24 @@
       border: 1px solid var(--dark-shade--lighten);
       color: var(--dark-shade--lighten);
     }
+  }
+}
+.control {
+  display: flex;
+  .clear {
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .apply {
+    justify-self: end;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .hidden {
+    visibility: hidden;
   }
 }
 .hide {
