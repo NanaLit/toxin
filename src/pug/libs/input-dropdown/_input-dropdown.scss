@@ -34,6 +34,9 @@
       color: var(--dark-shade--lighten);
       border-radius: 5px 5px 0 0;
     }
+    &_rooms {
+      width: 15.625rem;
+    }
   }
   &-wrapper {
     border: 1px solid var(--dark-shade--lighten);
@@ -64,13 +67,20 @@
       }
       
     }
+    &_rooms {
+      width: 15.625rem;
+    }
     button {
       width: 30px;
       height: 30px;
       background-color: #fff;
       border-radius: 50%;
-      border: 1px solid var(--dark-shade--lighten);
-      color: var(--dark-shade--lighten);
+      border: 1px solid var(--dark-shade--lightest);
+      color: var(--dark-shade--lightest);
+      &:hover, :focus {
+        color: var(--dark-shade--lighten);
+        border: 1px solid var(--dark-shade--lighten);
+      }
     }
   }
 }

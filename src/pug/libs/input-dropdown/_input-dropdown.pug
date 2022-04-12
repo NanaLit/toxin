@@ -1,15 +1,15 @@
 
-mixin dropdown-input(labelName, title, items=[], className)
+mixin dropdown-input(labelName, title, items=[], className, number)
   .dropdown
     .titles.titles_h3=labelName
     .dropdown__title(class= "dropdown__title_"+className)=title 
-    .dropdown-wrapper.hide
+    .dropdown-wrapper.hide(class= "dropdown-wrapper_"+className)
       each item in items 
         .dropdown-wrapper__item
           p.titles.titles_h3=item 
           .counter
             button.minus(class=className) -
-            span.titles.titles_h3.counter__number 0
+            span.titles.titles_h3.counter__number(class="counter__number_"+className)=number
             button.plus(class=className) +
       if (className === 'guests')
         .control 
