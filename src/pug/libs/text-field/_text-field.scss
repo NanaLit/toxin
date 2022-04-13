@@ -26,15 +26,13 @@
       color: var(--dark-shade--lightest);
       align-self: center;
     }
-    &:hover, :focus {
+    &:hover, &:focus {
       border: 1px solid var(--dark-shade--lighten);
       color: var(--dark-shade--lighten);
+      outline: none;
       &::placeholder {
         color: var(--dark-shade--lighten);
       }
-    }
-    &:active {
-      background-color: #fff;
     }
   }
 }

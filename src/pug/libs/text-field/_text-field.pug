@@ -7,7 +7,7 @@ mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly,
     - maxlength = "10"
   .text-field   
     label.titles.titles_h3(for=name)= labelName
-    input.text-field__input(
+    input.text-field.text-field__input(
       class= `${maskClass}`
       type=type
       name=name

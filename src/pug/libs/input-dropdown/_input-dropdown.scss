@@ -18,15 +18,14 @@
     width: 19rem;
     height: 2.5rem;
     border: 1px solid var(--dark-shade--lightest);
-    color: var(--dark-shade--lightest);
+    color: var(--dark-shade--lighten);
     display: flex;
     border-radius: 5px;
     justify-content: flex-start;
     padding-left: 1rem;
     align-items: center;
     margin-top: 5px;
-    &:hover, :focus {
-      color: var(--dark-shade--lighten);
+    &:hover, &:focus {
       border: 1px solid var(--dark-shade--lighten);
     }
     &_active {
@@ -56,7 +55,7 @@
       color: var(--dark-shade--lightest);
       justify-content: space-between;
       padding-right: 7px;
-      &:hover, :focus {
+      &:hover, &:focus {
         color: var(--dark-shade--lighten);
       }
       .counter {
@@ -77,7 +76,7 @@
       border-radius: 50%;
       border: 1px solid var(--dark-shade--lightest);
       color: var(--dark-shade--lightest);
-      &:hover, :focus {
+      &:hover, &:focus {
         color: var(--dark-shade--lighten);
         border: 1px solid var(--dark-shade--lighten);
       }
