@@ -56,6 +56,8 @@
     }
   }
   &_big {
+    background: url(../../../images/arrow_forward_white.svg) no-repeat 95% 50%, var(--main-gradient);
+    
     width: 20rem;
   }
 }
