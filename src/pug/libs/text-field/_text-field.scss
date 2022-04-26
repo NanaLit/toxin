@@ -22,6 +22,10 @@
     border: 1px solid var(--dark-shade--lightest);
     border-radius: 5px;
     padding-left: 0.75rem;
+    &_sub {
+      width: 15.625rem;
+      background: url(../../../images/arrow_forward_purpul.svg) no-repeat 95% 50% transparent;
+    }
     &::placeholder {
       color: var(--dark-shade--lightest);
       align-self: center;
