@@ -5,6 +5,7 @@ block variables
 block content
   include ../../libs/input-dropdown/_input-dropdown.pug
   include ../../libs/buttons/_buttons.pug
+  include ../../libs/datepicker/_datepicker.pug
   .container 
     .text-field-container
       +text-field("text field", "email", "email", "Email", disabled, readonly, false)
@@ -18,3 +19,4 @@ block content
       +button("click me", "outline")
       +button("click me", "transparent")
       +text-field("subscription text field", "email", "date", "Email", disabled, readonly, false, 25, true)
+      +datepicker
