@@ -1,7 +1,7 @@
 .air-datepicker.-inline-{
   border: 1px solid var(--dark-shade--lightest);
   width: 20rem;
-  height: 23rem;
+  min-height: 23rem;
   .air-datepicker--content {
     padding: 3px 19px 0 21px;
     .air-datepicker-body--day-names{
@@ -112,4 +112,24 @@ nav.air-datepicker-nav {
   }
   
 }
-
+.titles {
+  font-family: var(--mainFont);
+  font-weight: 700;
+  color: var(--dark-shade);
+  &_h3 {
+    font-size: var(--font-size--small);
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    &_purple {
+      color: var(--purple);
+    }
+  }
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  .clear {
+    color: var(--dark-shade--lighten);
+  }
+}

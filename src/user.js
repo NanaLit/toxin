@@ -4,7 +4,7 @@ import maskedInput from "./pug/libs/text-field/_mask";
 import dropdown from "./pug/libs/input-dropdown/_dropdown";
 import AirDatepicker from './pug/libs/datepicker/air-datepicker';
 import './pug/libs/datepicker/air-datepicker.css';
-import showStaticCalendar from './pug/libs/datepicker/_datepicker';
+import createButtons from './pug/libs/datepicker/_datepicker';
 
 
 
@@ -15,5 +15,9 @@ window.addEventListener('DOMContentLoaded', function() {
     range: true,
     multipleDateSeparator: 2
   });
-  showStaticCalendar();
+  new AirDatepicker('#datepicker', {
+    range: true,
+    multipleDateSeparator: 2
+  });
+  createButtons();
 });
