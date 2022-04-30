@@ -1,0 +1,5 @@
+include ../text-field/_text-field.pug 
+include ../datepicker/_datepicker.pug 
+mixin filter-date()
+    +text-field("filter date-dropdown", type= "text", name, '', disabled, readonly, true, maxlength, true, false, true)
+    +datepicker("datepicker", "one-field")

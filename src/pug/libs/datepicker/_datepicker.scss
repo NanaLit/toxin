@@ -133,3 +133,19 @@ nav.air-datepicker-nav {
     color: var(--dark-shade--lighten);
   }
 }
+.one-field {
+  .air-datepicker.-inline- {
+    min-height: 19rem;
+    width: 16.5rem;
+    .air-datepicker-body--cells.-days- {
+      grid-auto-rows: 32px;
+    }
+    .air-datepicker-nav {
+      margin-bottom: 5px;
+    }
+    .air-datepicker-nav--title {
+      margin-right: 10px;
+    }
+  }
+  
+}

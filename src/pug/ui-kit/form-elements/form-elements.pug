@@ -1,5 +1,6 @@
 extends ../../layouts/default-ui-kit.pug 
 include ../../libs/text-field/_text-field.pug 
+include ../../libs/date-dropdown/date-dropdown.pug 
 block variables
   - pageTitle = 'Form Elements'
 block content
@@ -18,6 +19,6 @@ block content
       +button("перейти к оплате", "big")
       +button("click me", "outline")
       +button("click me", "transparent")
-      +text-field("subscription text field", "email", "date", "Email", disabled, readonly, false, 25, true)
-      +datepicker("airdatepicker")
-      +datepicker("datepicker")
+      +text-field("subscription text field", "email", "date", "Email", disabled, readonly, false, 25, true, subClass)
+      +datepicker("airdatepicker", "two-fields")
+      +filter-date()

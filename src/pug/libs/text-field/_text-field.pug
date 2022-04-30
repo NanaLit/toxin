@@ -1,16 +1,18 @@
 
-mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly, isMasked, maxlength, subscription = false)
+mixin text-field(labelName, type= "text", name, placeholder, disabled, readonly, isMasked, maxlength, subscription = false, subClass, arrowClass)
   - let maskClass = ''
   if isMasked
     - maskClass = "text-field__input_masked"
     - placeholder = "ДД.ММ.ГГГГ"
     - maxlength = "10"
   if subscription
-    - maskClass = "text-field__input_sub"
+    - subClass = "text-field__input_sub"
+  if arrowClass
+    - arrowClass = "text-field__input_arrow"
   .text-field   
     label.titles.titles_h3(for=name)= labelName
     input.text-field.text-field__input(
-      class= `${maskClass}`
+      class= `${maskClass} ${subClass} ${arrowClass}`
       type=type
       name=name
       placeholder= placeholder
